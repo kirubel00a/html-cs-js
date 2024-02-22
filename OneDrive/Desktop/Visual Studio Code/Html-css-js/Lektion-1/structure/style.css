@@ -1,0 +1,46 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+header
+{
+background-color:black;
+color: #fff;
+
+padding: 20px;
+margin:0;
+
+font-size: 33px;
+font-weight:300;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#Showcase
+{
+  Height: 200px;
+  padding: 30px;  
+}
+#about-us 
+{
+
+
+}
+.bg-yellow
+{
+    background-color: aqua;
+}
+.bg-red
+{
+background-color: rebeccapurple;
+
+}
+.bg-blue
+{
+    background-color: greenyellow;
+}
+footer
+{
+background-color: black;
+color: #fff;
+padding: 10px 0;
+text-align: center;
+}
