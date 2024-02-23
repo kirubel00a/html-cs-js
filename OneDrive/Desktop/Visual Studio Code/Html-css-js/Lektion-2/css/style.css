@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "roboto", sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.section-title {
+  font-family: "roboto", sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.section-title a {
+  text-decoration: none;
+}
