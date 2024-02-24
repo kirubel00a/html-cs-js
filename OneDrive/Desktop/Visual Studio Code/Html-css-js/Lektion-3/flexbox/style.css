@@ -1,0 +1,91 @@
+/* 
+FlexBox
+
+dispaly: flex;
+
+justify-content: flex-start;
+justify-content: flex-end;
+justify-content: flex-center;
+justify-content: speace-bettwen;
+justify-content: space-around;
+justify-content: space-evenly;
+
+align-items: flex-start;
+align-items: flex-end;
+align-items: center;
+align-items: stretch;
+
+flex: 1
+flex-direction row
+flex-direction colum;
+
+*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    
+    /* den första ska man göra i style.css är att ska skappa en box */
+}
+.container
+{
+    width: 100%;
+    /* border: 1px solid white; */
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+header 
+{
+    background-color: darkcyan;
+    padding-top: 10px; 
+    padding-bottom: 10px;
+    /* border: 1px solid black; */
+}
+header .container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fa-bars
+{
+    font-size: 22px;
+}
+.name
+{
+    flex: 1;
+}
+.menu-bars
+{
+    text-align: right;
+    flex: 1;
+}
+.menu-links
+{
+    display: none;
+    text-align: right;
+    flex: 1;
+}
+.menu-links a
+{
+    margin-left: 20px;
+ 
+}
+@media (min-width: 1200px)
+{
+    /* anppasr den till telfon och dator webbsida */
+    .menu-bars
+    {
+        display: none;
+    }
+    .menu-links
+    {
+        display: inline-block;
+    }
+    
+}
+
+
