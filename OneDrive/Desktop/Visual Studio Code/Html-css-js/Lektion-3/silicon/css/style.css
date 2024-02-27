@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+header .container .site-navigation {
+  display: flex;
+  align-items: center;
+}
+header .container .site-navigation .logo {
+  margin-right: 140px;
+}
+header .container .site-settings {
+  display: flex;
+  align-items: center;
+}
+header .container .site-settings .theme-mode {
+  display: flex;
+  align-items: center;
+}
+header .container .site-settings .theme-mode svg {
+  margin-top: 10px;
+}
