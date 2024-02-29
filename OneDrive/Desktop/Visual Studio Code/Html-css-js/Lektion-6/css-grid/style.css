@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    /* den kalkuerar båda höjd och bred med borderna  */
+}
+.parent{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 3fr auto;
+
+}
+
+.box{
+    border: 1px solid black;
+    background-color: bisque;
+}
+header{
+    background-color:bisque;
+    padding: 20px;
+    display: grid;
+    gap: 30px   ;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "logo button"
+                        " menu menu";
+
+   @media(min-width: 992px){
+        grid-template-columns: auto 1fr;
+        grid-template-areas: "logo menu";
+   }
+   #logo{
+    grid-area: logo;
+   }
+
+   #navbar{
+    display: none;
+    grid-area: menu;
+
+      @media(min-width: 992px){
+        display: block !important;
+      }
+
+      a{
+        display: block;
+
+        @media(min-width: 992px){
+            display: inline-block;
+      }
+   }
+}
+
+   button{
+    grid-area: button;
+        @media(min-width: 996px) {
+            display: none;
+        }
+
+   }
+
+}
+
+main{
+    border: 2px solid aqua;
+    display: flex;
+    justify-content: center;
+
+    
+
+
+}
+footer{
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+
+    @media(min-width: 992px){
+        justify-content: flex-start;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .social-media{
+        display: flex;
+        gap: 15px;
+        justify-content:center;
+         
+        @media(min-width: 992px){
+            justify-content: flex-end;
+         }
+    }
+    
+    a{
+        color: white;
+        
+    }
+}
